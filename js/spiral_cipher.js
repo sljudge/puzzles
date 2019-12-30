@@ -74,8 +74,6 @@ class spiralCipher {
                     break
             }
 
-            console.log(`${l} ; x:${l % 4}`)
-            console.log(`j: ${j} ; i: ${i} ; n: ${n} ; `)
             console.log(' ')
             console.log('//////////////////////////////')
             console.log(' ')
@@ -120,8 +118,8 @@ const cipher = new spiralCipher
 
 //ENCODE
 // console.log(cipher.encode('Dulce et decorum est'))
-// console.log(cipher.encode('Dulce_et_decorum_est_pro_patria_mori'))
+console.log(cipher.encode('Dulce_et_decorum_est_pro_patria_mori'))
 // console.log(cipher.encode('Romani ite domum'))
 
 // DECODE
-console.log(cipher.decode('Stsgiriuar i ninmd l otac'))
+// console.log(cipher.decode('Stsgiriuar i ninmd l otac'))
