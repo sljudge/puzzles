@@ -21,8 +21,6 @@ class spiralCipher {
         return grid
     }
 
-
-
     iterate(numberOfSpaces, str, type, output, input = []) {
         for (let l = 0, i = 0, j = 0, n = Math.sqrt(numberOfSpaces) - 1; l < numberOfSpaces; l++) {
             /*

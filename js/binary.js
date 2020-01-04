@@ -36,9 +36,24 @@ const toBinary = (num, output = [], float = [], numberOfFractionalPlaces = 10) =
 }
 
 // console.log('RESULT:', toBinary(193.001))
-console.log('RESULT:', toBinary(0.32))
-console.log('RESULT:', toBinary(2 / 3))
-console.log('RESULT:', toBinary(9 / 8))
-console.log('RESULT:', toBinary(1 / 5))
+// console.log('RESULT:', toBinary(0.32))
+// console.log('RESULT:', toBinary(2 / 3))
+// console.log('RESULT:', toBinary(9 / 8))
+// console.log('RESULT:', toBinary(1 / 5))
 
-console.log(23497 & 23095)
+// console.log(23497 & 23095)
+
+//Addition
+const binaryAddition = (a, b) => {
+    const aLength = a.toString().length
+    const bLength = b.toString().length
+    const length = aLength > bLength ? aLength : bLength
+
+    let output = []
+    for (let i = length - 1; i >= 0; i--) {
+        console.log(i)
+    }
+    console.log('output: ', output)
+}
+
+console.log(binaryAddition(101110, 110001))
