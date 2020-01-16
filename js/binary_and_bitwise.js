@@ -106,4 +106,4 @@ const bitwiseMultiplication = (x, y, sum = 0) => {
     return bitwiseMultiplication(x, y, sum)
 }
 // console.log(toBinary(bitwiseMultiplication(20, 22)))
-console.log(toBinary(18))
+console.log(toBinary(64))
