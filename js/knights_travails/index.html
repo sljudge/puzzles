@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Knights Travels</title>
+
+    <script src="https://kit.fontawesome.com/2af9b70016.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        body {
+            margin: 0 1rem;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #route-container {
+            margin: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: #1e1e1e double 3px;
+            min-width: 2.5rem;
+            min-height: 60%;
+        }
+
+        #inputs {
+            display: flex
+        }
+
+        .input {
+            display: flex;
+            align-items: center;
+        }
+
+        input {
+            font-size: 20px;
+            width: 100px;
+
+        }
+
+        h5 {
+            font-size: 20px;
+            margin: 0.2rem
+        }
+
+        #btn-container {
+            display: flex
+        }
+
+        .btn {
+            color: white;
+            font-size: 15px;
+            justify-self: flex-end;
+            border-radius: 0.2rem;
+            border: rgba(0, 0, 0, 0.6) 1px solid;
+            box-shadow: 1px 1px rgba(0, 0, 0, 0.6);
+            padding: 0.1rem 0.2rem;
+        }
+
+        #submit {
+            background-color: rgba(15, 128, 27, 0.8);
+        }
+
+        #clear {
+            background-color: rgba(255, 25, 25, 0.8);
+        }
+
+        #route {
+            font-size: 0.5rem;
+        }
+    </style>
+</head>
+
+<body id='body'>
+    <div id='app'>
+        <div id='inputs'>
+            <div class='input'>
+                <h5>Start</h5>
+                <input id='start' type="text" maxlength="2">
+            </div>
+            <div class='input'>
+                <h5>End</h5>
+                <input id='end' type="text" maxlength="2">
+            </div>
+            <div id='btn-container'>
+                <h5 id="submit" class='btn'>Submit</h5>
+                <h5 id="clear" class='btn'>Clear</h5>
+            </div>
+        </div>
+    </div>
+    <div id='route-container'>
+
+    </div>
+    <!-- [ 'C6', 'B4', 'D3', 'F4' ] -->
+    <script src="./js/index.js"></script>
+    <script src="./js/Board.js"></script>
+    <script src="./js/Piece.js"></script>
+    <script src="./js/knights_travels.js"></script>
+
+</body>
+
+</html>
